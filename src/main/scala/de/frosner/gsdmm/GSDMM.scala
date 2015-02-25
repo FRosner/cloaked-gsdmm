@@ -91,8 +91,7 @@ object GSDMM extends App {
         nzw((currentCluster, word)) += 1
       }
     }
+    println(s"Iteration $iteration: $zd")
   }
-
-  println(zd)
 
 }
