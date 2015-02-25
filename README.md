@@ -1,2 +1,2 @@
 # cloaked-gsdmm
-Gibbs Sampler for Dirichlet-Multinomial Model
+http://dbgroup.cs.tsinghua.edu.cn/wangjy/papers/KDD14-GSDMM.pdf
