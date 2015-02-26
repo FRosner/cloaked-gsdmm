@@ -6,7 +6,7 @@ import scala.collection.mutable
 
 import breeze.linalg._
 
-object GSDMM extends App {
+object GSDMMRunner extends App {
 
   type DocumentId = Int
   type ClusterId = Int
@@ -16,8 +16,64 @@ object GSDMM extends App {
   val documents = Array(
     List("a", "b", "b"),
     List("a", "a", "a"),
+    List("b", "a", "b"),
     List("a", "a"),
-    List("b", "a", "b")
+    List("c"),
+    List("a", "b", "b"),
+    List("a", "a", "a"),
+    List("b", "a", "b"),
+    List("a", "a"),
+    List("c"),
+    List("a", "b", "b"),
+    List("a", "a", "a"),
+    List("b", "a", "b"),
+    List("a", "a"),
+    List("c"),
+    List("a", "b", "b"),
+    List("a", "a", "a"),
+    List("b", "a", "b"),
+    List("a", "a"),
+    List("c"),
+    List("a", "b", "b"),
+    List("a", "a", "a"),
+    List("b", "a", "b"),
+    List("a", "a"),
+    List("c"),
+    List("a", "b", "b"),
+    List("a", "a", "a"),
+    List("b", "a", "b"),
+    List("a", "a"),
+    List("c"),
+    List("a", "b", "b"),
+    List("a", "a", "a"),
+    List("b", "a", "b"),
+    List("a", "a"),
+    List("c"),
+    List("a", "b", "b"),
+    List("a", "a", "a"),
+    List("b", "a", "b"),
+    List("a", "a"),
+    List("c"),
+    List("a", "b", "b"),
+    List("a", "a", "a"),
+    List("b", "a", "b"),
+    List("a", "a"),
+    List("c"),
+    List("a", "b", "b"),
+    List("a", "a", "a"),
+    List("b", "a", "b"),
+    List("a", "a"),
+    List("c"),
+    List("a", "b", "b"),
+    List("a", "a", "a"),
+    List("b", "a", "b"),
+    List("a", "a"),
+    List("c"),
+    List("a", "b", "b"),
+    List("a", "a", "a"),
+    List("b", "a", "b"),
+    List("a", "a"),
+    List("c")
   )
 
   val numClusters = 3
