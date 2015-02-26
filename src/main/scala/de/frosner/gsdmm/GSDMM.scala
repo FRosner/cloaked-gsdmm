@@ -68,6 +68,7 @@ object GSDMM extends App {
         ((for (word <- currentDocument; j <- 1 to ndw((documentId, word))) yield nzw_d((clusterId, word)) + beta + j - 1).reduce(_ * _) /
           ((1 to currentDocument.size).map(i => nz_d(clusterId) + v * beta + i - 1).reduce(_ * _)))
     }
+    println(s"""  Document $documentId: ${pz.mkString(" ")}""")
     val pzSum = pz.sum
     val normalizedPz = pz.map(_ / pzSum)
     val mult = Multinomial(DenseVector(normalizedPz.toArray))
